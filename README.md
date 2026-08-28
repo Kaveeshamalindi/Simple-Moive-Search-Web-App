@@ -2,6 +2,8 @@
 
 A simple and elegant **Movie Searcher web application** that allows users to search for movies and view information such as the movie title, release year, poster, and plot.
 
+**Live Demo**: https://kaveeshamalindi.github.io/Simple-Moive-Search-Web-App/
+
 ---
 
 ## ✨ Features
@@ -59,9 +61,13 @@ This project was created to practice:
 * Fetching and displaying JSON data
 * Building a simple responsive web application
 
+---
+
 ## 📚 Learning Outcome
 
 Through this project, I practiced connecting a frontend application with an external API and dynamically displaying the retrieved movie information on a webpage.
+
+---
 
 ## 📄 License
 
