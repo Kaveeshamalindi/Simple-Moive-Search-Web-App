@@ -5,7 +5,7 @@ A simple and elegant **Movie Searcher web application** that allows users to sea
 **Live Demo**: https://kaveeshamalindi.github.io/Simple-Moive-Search-Web-App/
 
 <p align="center">
-  <img src="Images/Screenshot (1390).png" width="600" style="display: inline-block;">
+  <img src="Images/Screenshot (1390).png" width="800" style="display: inline-block;">
 </p>
 
 ---
