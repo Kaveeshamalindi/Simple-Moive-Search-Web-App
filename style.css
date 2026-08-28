@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 35px 20px;
+
+    background:
+        radial-gradient(circle at top, #29234a, #11111b 55%, #08080d);
+
+    color: white;
+
+    overflow: hidden;
+}
+
+/* App Name */
+.app-name {
+    font-size: 30px;
+    margin-bottom: 25px;
+
+    letter-spacing: 0.5px;
+
+    background: linear-gradient(135deg, #c084fc, #818cf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Search Area */
+#movie {
+    width: 420px;
+    max-width: 90vw;
+
+    padding: 13px 18px;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+
+    outline: none;
+
+    background: rgba(255, 255, 255, 0.08);
+    color: white;
+
+    font-size: 15px;
+
+    backdrop-filter: blur(10px);
+
+    transition: 0.3s;
+}
+
+#movie::placeholder {
+    color: #aaa;
+}
+
+#movie:focus {
+    border-color: #8b5cf6;
+    box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.15);
+}
+
+/* Button */
+button {
+    margin-top: 10px;
+
+    padding: 11px 28px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: linear-gradient(135deg, #8b5cf6, #6366f1);
+
+    color: white;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(99, 102, 241, 0.4);
+}
+
+/* Movie Title */
+#title {
+    margin-top: 22px;
+
+    font-size: 30px;
+    text-align: center;
+
+    max-width: 650px;
+}
+
+/* Year */
+#year {
+    margin-top: 4px;
+
+    color: #a5b4fc;
+    font-size: 15px;
+}
+
+/* Poster */
+#poster {
+    width: 190px;
+    max-height: 270px;
+
+    object-fit: cover;
+
+    margin-top: 12px;
+
+    border-radius: 14px;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+
+    transition: 0.3s;
+}
+
+#poster:hover {
+    transform: scale(1.03);
+}
+
+/* Plot */
+#plot {
+    width: min(600px, 90vw);
+
+    margin-top: 14px;
+
+    padding: 13px 18px;
+
+    border-radius: 12px;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    color: #d1d5db;
+
+    font-size: 14px;
+    line-height: 1.5;
+
+    text-align: center;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    body {
+        padding-top: 25px;
+    }
+
+    .app-name {
+        font-size: 25px;
+    }
+
+    #title {
+        font-size: 24px;
+    }
+
+    #poster {
+        width: 160px;
+        max-height: 230px;
+    }
+
+    #plot {
+        font-size: 13px;
+        max-height: 100px;
+        overflow: hidden;
+    }
+}
